@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+
+
+<style>
+
+.body
+    {
+        margin:0px;
+        padding: 0px;
+    }
+.container-box
+{
+    width: 100%;
+    min-height: 640px;
+    background-image: linear-gradient(rgb(128, 33, 33),rgb(187, 166, 166));
+}
+.wrapper-box
+{
+    width: 80%;
+    /*min-height: 400px;*/
+    /*background-color: red;*/
+    margin: 0px auto; /*to centre the box*/
+    padding-top: 50px;
+}
+.wrapper{
+    width: 300px;
+    height: 200px;
+    box-shadow: 2px 2px 15px black;
+    border-radius: 5px;
+    float: left;
+    margin: 20px;
+    position: relative;
+    overflow: hidden; /* larger of image wont comeout of container*/
+}
+.wrapper img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+.content
+{
+    width: 300px;
+    height: 200px;
+    background:rgba(107, 108, 214, 0.8);
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    font-size: 35px;
+    font-family: Brush Script Std;
+    color: white;
+    line-height: 6;
+}
+
+
+/*transitions*/
+.transition1 .content
+{
+    opacity: 0;
+    transition: opacity 700ms;
+}
+.transition1:hover .content
+{
+    opacity: 1;/* appearence*/
+}
+.transition2 .content
+{
+    transform: scale(0);
+    transition-duration: 600ms;
+}
+.transition2:hover .content
+{
+    transform: scale(1); /* zooms into out*/
+}
+.transition3 .content
+{
+    transform: scale(1);/* scale (1) than it wont dissapeer*/
+    transition-duration: 600ms;
+}
+.transition3:hover .content
+{
+    transform: scale(0);
+}
+.transition3 img
+{
+    transition-duration: 3s;
+}
+.transition3:hover img
+{
+    transform: scale(1.2);
+}
+.transition4 .content
+{
+    margin-left: 300px; /* it will align nexto image but wont see becaz o overflow=hidden and 300 becaz with of image */
+    transition: margin-left 600ms;
+}
+.transition4:hover .content
+{
+    margin-left: 0px;
+}
+.transition5 .content
+{
+    margin-top: 200px; /* if -200 than slides from top to bottom and +200will slide bottom to top*/
+    transition: margin-top 600ms;
+}
+.transition5:hover .content{
+    margin-top: 0px;
+}
+.transition6 .content
+{
+    opacity: 0; /* text will disapper*/
+    transition:  800ms;
+}   
+.transition6:hover .content 
+{
+    transform: rotate(360deg);
+    opacity: 1;
+}
+.transition6 img
+{
+    transition-duration: 3s;
+}
+.transition3:hover img
+{
+    transform: scale(1.2);
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="container-box">
+    <div class="wrapper-box">
+        <div class="wrapper transition1">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                nature
+            </div>
+        </div>
+        <div class="wrapper transition2">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                winter
+            </div>
+        </div>
+        <div class="wrapper transition3">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                summer
+            </div>
+        </div>
+       <div class="wrapper transition4">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                autum
+            </div>
+        </div>
+        <div class="wrapper transition5">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                fall
+            </div>
+        </div>
+        <div class="wrapper transition6">
+            <img src="Desk.jpeg" alt="">
+            <div class="content">
+                rain
+            </div>
+        </div>
+    </div>
+</div>    
+  
+</body>
+</html>

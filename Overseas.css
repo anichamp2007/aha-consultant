@@ -1,0 +1,367 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 80px;
+    /*background: rgba(0,0,0,0.5);/* whatever the height given above will be of this color*/
+    position: fixed; /* if you want the menu should be scrolled on top despite of scroll*/
+    top:0px;
+    z-index: 99999999;/* not to hide menubar during mobile mode*/
+}
+.wrap-container
+{
+    /*background: ;/* gives complete logo+menubar color*/
+    width:90%;
+    margin: 0px auto;/* it makes the thing to be set in centre*/
+}
+.brand-image
+{
+    width: 170px;
+    height:60px;  /*as in header the size-padding size*/
+    padding: 10px 0px; /*gives space to logo image to 10px top-botton and 0px in left-right*/
+}  
+.service-image
+{
+    width: 50%;
+    margin:0px auto;
+}
+.active
+{
+    background: rgba(0,0,0,0.5); /* puts that active define one in mention color*/
+}
+.services-list
+{
+	position:relative;
+}
+.one
+{
+	position:relative;
+}
+.menu
+{
+    float: right;/* the menu goes right*/
+    /*margin-top: 15px;/* gives top space the entire menu bar contain (home,service etc)*/
+    line-height: 50px; /* align the entire menu bar contain (home,service etc)*/
+}
+.menu ul li
+{
+    list-style: none; /* removes the button in front of menu bar list*/
+    display: inline;  /* chnages vertical bar to horizontal bar*/
+}
+
+.menu ul li a
+{
+    text-decoration: none; 
+    color:white; /* chnages the home, service, contact etc in to white color font*/
+    /*text-transform: uppercase;*/
+    /*background-color: red;/* home box appear in color which you give here*/
+    font-size: 15px;
+    font-weight: 500;/* chnages thickness of home, service, contact etc.*/
+    padding: 10px 25px; /* space beteen home, service, contact etc.. 20px from all sides*/
+    background-color: rgba(0,0,150,0.6); /*orange*/
+    
+    margin: 3px;
+}
+.menu ul li a:hover
+{
+    background-color: white; /* when hover on home-service-contact etc..chnage color*/
+    color: orangered;
+}
+.menu1
+{
+	margin-top:-6px;
+    position: absolute;
+	left:0px;
+	display:none;
+}
+
+.menu1 ul
+{
+	padding:0px;
+}
+.menu1 ul li 
+{
+	display:block;
+	margin-bottom:1px;
+	width:220px;
+    
+}
+.menu1 ul li a
+{
+	display:block;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.services-list:hover .menu1
+{
+    display: block;
+    position: absolute;
+    
+}
+.menu2 ul li
+{
+	width:180px; 
+}
+.menu2
+{
+	margin-top: 0px;
+    position: absolute;
+    right: 215px;
+    top: -3px;
+    display: none;
+}
+.one:hover .menu2
+{
+    display: block;
+}
+
+.header-images
+{
+    float: left; /* tp arrange them on left side*/
+}
+
+.menu-button /*for smaller device view*/
+{
+    position: absolute;
+    right: 20px;
+    top:4px;
+    width: 45px;
+    height: 40px;
+    display: none;
+}
+.fa
+{
+    padding: 0px 7px;
+}
+
+
+
+.wrapper-content
+{
+    text-align: center;/* centres the written text*/
+    padding-top: 10%;
+    padding-bottom: 25%; /* shifts the bottom level of backgroundc image*/
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)), url(images/24C2.jpg) ; /* background image 100%--play with % and fixed*/;
+    background-color: (rgba(0,0,0,0.5));
+    background-size:cover/* to cover your complete image can be cover or contain*/
+}
+.wrapper-content h1
+{
+    color:red; /* color of h1 text*/
+    font-size: 50px; /* size of font of h1 text*/
+    font-family: arial; /* to change font style of h1 text*/
+    -webkit-text-stroke: 2px #00ff66; /* for chrome outline of text and color*/
+    -moz-text-stroke: 2px #00ff66; /* for mozilla outline of text and color*/
+    margin-bottom: -10px; /* to shift the b0ottom text to up and bottom pad of h1 to zero*/
+    
+}
+.wrapper-content p
+{
+    color: green;
+    
+}
+.explore-button
+{
+    
+    color: white;
+    font-size: 15px;
+    border: 1px solid #00ff66;/* border of this buttom will be color you entered with px size*/
+    border-radius: 100px; /* to give roumd shape to the bos corner*/
+    background: linear-gradient(rgba(255,0,0,0.6),rgba(255,0,55,0.4));/* fill color to box*/
+    padding: 10px 30px; /* to add spaces to correspondant top-bottom-left-right*/
+    cursor: pointer;
+}
+.explore-button:hover
+{
+    background: white;/* chnage the color when you hover on the button*/
+    color: black; /* color of the font when yo hover*/
+}
+
+/*end of first header section*/
+
+
+
+
+/*start of about us */
+
+
+.visa-us
+{
+    width: 100%;
+    min-height: 390px; /* defines minimum height of this section*/
+    background-color: rgba(242, 243, 171, 0.5);
+    /*background-image: url(Building-orange.jpg); /*you can chane the image always*/
+    /*background-color: blueviolet;/*to check the background but not necessary*/
+    background-size: cover;
+    background-position: center;/*image starts from centre*/
+    background-attachment: fixed; /* fixed so when we scroll the image stays at place and only write up scrolls*/
+    text-align: center;
+    
+}
+.visa-us h1
+{
+    color: red;
+    padding: 25px 0px;/* h1 will align padding 50px from top-bottom and 0 from left-right*/
+    margin-bottom: -10px;
+}
+.visa-us p
+{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    /*line-height: 0px; /*spacing between the paragraph text line*/
+    /*padding-bottom: 5%; /*gives space of 5% at bottom*//*if you are writting more than one para than avoid this*/
+    
+}
+/*end of About Us section*/
+
+
+
+
+
+/* now the services offers section starts*/
+
+.services
+{
+    width: 100%;
+    min-height: 1000px;/*height of the service sevtion*/
+    box-shadow: 0px -10px 20px white; /*this will shows complete service section and scrolls up the main with 20px glow color*/
+    position: relative; 
+    /*background-color: red;*/
+}
+.service-container
+{
+    width: 80%;
+    background:white; /*rgb(239, 239, 243); /*you can put this to see change*/
+    min-height: 575px; /*should be same*/
+    position: absolute;
+    left: 10%;  /* to centre the container*/
+    right: 10%; /*to centre the container*/
+    top: -25px;
+    box-shadow: 0px -10px 20px white;
+}
+.services h1
+{
+    margin: 0px; /* if this is not set than you wont see shadow effect defind in .services*/
+    text-align: center;
+    color: rgba(255,0,0,0.6);
+    padding-top: 15px; /*just not to get to close with line*/
+    padding-bottom: 5%;
+    /*font-family: monospace; /*to change the written style*/
+}
+.visa-box
+{
+    width: 50%; /*size of each box*/
+    min-height: 200px; /*height of the box*/
+    /*background: red; /* color of each box*/
+    text-align: center;
+    float: left; /*will change the box from vertical to horizontal*/
+    /*background-color: rgb(110, 142, 238);*/
+    margin-top: -10px;
+}
+.div-visa-box i /*fontawsome icon styling*/
+{
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 5px;
+}
+.div-visa-box h2
+{
+    color: olivedrab;
+    font: xx-large;
+    margin: 0px;
+}
+.div-visa-box h3
+{
+    color: red;
+    text-align: center;
+}
+.div-visa-box p
+{
+    color: black;
+    padding-bottom: 30px;
+    margin-top:15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -40px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;;
+    
+}
+
+.more-info
+{
+    color: rgb(245, 65, 10);
+    font-size: 15px;
+    border: 1px solid #00ff66;/* border of this buttom will be color you entered with px size*/
+    border-radius: 10px; /* to give roumd shape to the bos corner*/
+    background: rgb(248, 163, 6);/*linear-gradient(rgba(122, 131, 212, 0.6),rgba(10, 78, 224, 0.4));/* fill color to box*/
+    padding: 10px; /* to add spaces to correspondant top-bottom-left-right*/
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+
+}
+.more-info:hover
+{
+    background: rgb(228, 115, 40);/* chnage the color when you hover on the button*/
+    color: rgb(236, 14, 14); /* color of the font when yo hover*/
+}
+.visa-container
+{
+    width: 40%;
+    background:white; /*rgb(239, 239, 243); /*you can put this to see change*/
+    /*min-height: 575px; /*should be same*/
+    position: absolute;
+    left: 5%;  /* to centre the container*/
+    right: 5%; /*to centre the container*/
+    top: -25px;
+    text-align: center;
+}
+.div-visa
+{
+    width: 33%; /*size of each box*/
+    min-height: 200px; /*height of the box*/
+    /*background: red; /* color of each box*/
+    text-align: center;
+    float: left; /*will change the box from vertical to horizontal*/
+    /*background-color: rgb(110, 142, 238);*/
+}
+.div-visa h4
+{
+    color: red;
+    text-align: center;
+}
+.visa-image
+{
+        width: 50%;
+        height: 40%;
+        margin:0px auto;
+}
+.visa-button
+{
+    color: white;
+    font-size: 15px;
+    border: 1px solid #e0175a;/* border of this buttom will be color you entered with px size*/
+    border-radius: 100px; /* to give roumd shape to the bos corner*/
+    background: linear-gradient(rgba(255,0,0,0.6),rgba(255,0,55,0.4));/* fill color to box*/
+    padding: 5px 10px; /* to add spaces to correspondant top-bottom-left-right*/
+    cursor: pointer;
+    position: relative;
+}
+.div-visa p{
+    text-align: center;
+
+}
+/*end of service offers section*/
