@@ -1,0 +1,338 @@
+@media screen and (max-width:768px)/* below change happens when device width is <768px*/
+{
+   
+    .white-space
+    {
+        float: none; 
+        position: fixed;
+    }
+    
+    .left-conatct
+    {
+        float: none;
+        margin-top:-30px;
+        text-align: justify;
+    }
+    .social
+    {
+        display: none; /* hide the social icons from top*/
+    }
+    .left-conatct span
+    {
+        margin-left: 10px;
+    }
+    .menu-button
+    {
+        margin-right: -15px; /* positioning the menu button*/
+    }
+    .header
+    {
+        height: 70px;  /*must not be greater than actual one*/
+             
+    }
+    
+    /* first work on header image and than on menu*/
+    .header-images
+    {
+        height: 50px;
+        width: 70px;
+        float: none; 
+        margin-top: -27px;
+        margin-left: -50px;
+    }
+    .header-images .brand-image
+    {
+        height: 30px;
+        width: 140px;
+        padding: 10px 20px;
+    }
+    .menu
+    {
+        float: none;/* will shift to leftside*/
+    }
+    .menu ul li
+    {
+        display: block;/* it will chnage from inline(horizontal) to vertical(block*/
+        background: rgba(0,0,0,0.2);
+        padding: 2px; /*will makes the menubar items spacing close */
+        font-size: 17px;
+        text-align: center;
+    }
+    .menu ul li:hover
+    {
+        background: #2a2a2a;
+    }
+    .menu ul
+    {
+        margin: 0px; /*aligns vertically the menubar with top logo */
+    }
+    .menu-button /*for smaller device*/
+    {
+        display:block; 
+    }
+    .menu /*for smaller device but wont effective on bigger device*/
+    {
+        display: none;
+    }
+    .wrap-content
+    {
+        width: 100%;
+    }
+    .wrapper-content h1
+    {
+        font-size: 30px;
+    }
+    .wrapper-content p
+    {
+        font-size: 13px;
+    }
+    .explore-button
+    {
+        padding: 2px 20px;
+        font-size: 15px;
+    }
+
+
+    /* main services box*/
+    .div-box
+    {
+        width: 70%;
+        float: none;
+        text-align: center;
+        margin: 25px auto; /* to centre the content*/
+    }
+    .div-box h3
+    {
+        font-size:20px;
+    }
+    .service-container
+    {
+        box-shadow: none;
+        position: static;
+        width: 100%;
+    }
+    .service-container h1
+    {
+        font-size: 30px;
+    }
+    .div-visa
+    {
+        float: none;
+        margin: 0px auto; 
+    }
+
+
+
+    /* about us section*/
+    .about-us h1
+    {
+    font-size: 30px;
+    }
+    .about-us p
+    {
+        padding: 20px;
+        text-align: justify;
+    }
+
+
+    /*visa service section*/
+    .visa-services h1
+    {
+        font-size: 30px;
+    }
+    .div-visa-box
+    {
+        float: none;
+    }
+    .div-visa-box h1
+    {
+        font-size: 20px;
+    }
+    .div-visa-box p
+    {
+        font-size: 13px;
+        padding-bottom: 25px;
+    }
+    .div-visa h4
+    {
+        font-size: 16px;
+    }
+    .div-visa
+    {
+        width: 50%;
+        margin-top: 40px;
+    }
+
+
+    .between /* the between blue color to align*/
+    {
+        width: 100%;
+        float: none;
+        margin-top: 630px;
+    }
+
+
+
+    /*company service section */
+    .company-services h1
+    {
+        font-size: 20px;
+    }
+    .company-box
+    {
+        float: none;
+        width: 50%;
+        margin: 15px auto;
+    }
+    .company-box h3
+    {
+        font-size: 16px;
+        float: none;
+    }
+    .company-box p
+    {
+        font-size:13px ;
+    }
+
+
+
+    /* education service section*/
+    .education-services
+    {
+        width: 100%;
+    }
+    .education-services h1
+    {
+        font-size: 20px;
+    }
+    .education-box
+    {
+        float: none;
+        width: 50%;
+        margin: 15px auto;
+    }
+    .education-box h3
+    {
+        font-size: 16px;
+        float: none;
+    }
+    .education-box p
+    {
+        font-size:13px ;
+    }
+
+
+
+/* rto service section*/
+
+
+.rto-services h1
+{
+    font-size: 20px;
+}
+.rto-box
+{
+    float: none;
+    width: 60%;
+    margin: 15px auto;
+}
+.rto-box h3
+{
+    font-size: 16px;
+    float: none;
+}
+.rto-box p
+{
+    font-size:13px ;
+}
+
+
+    /* contact us section*/
+    .contact-us
+    {
+        padding-top: 300px;
+        float: none;
+        margin-bottom: 350px;
+    }
+    .conatct-us h1
+    {
+        margin-top: 30px; /*removes margin between contact us and form*/
+    }
+    .contact-background
+    {
+        width: 85%;
+        height: 100%;
+    }
+    .contact-us .contact-image
+    {
+        float: none;
+        width: 100%;
+        margin: 20px auto;
+        
+    }
+    .conatct-image img
+    {
+        width: 50%;
+    }
+    .contact-us .contact-form
+    {
+      
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form input
+    {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .contact-form .subject
+    {
+        width: 100%;
+    }
+    .contact-form .submit
+    {
+        width: 65%;
+        padding: 8px 30px;  
+    }
+    .footer .widgets
+    {
+        width: 100%; /*sets all widgets to vertically as in bigger screen its 20%*/
+        min-height: auto;/* aligns height automaticall to defind*/
+        padding: 2.5% 0px;
+        float: none; /*to clear the float defind in bigger screen*/
+    }
+    .footer .subscribe
+    {
+        width: 90%;/* you can adjust by viewing the mobile screen*/
+    }
+    .footer .main-footer p
+    {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:320px)
+{
+    .wrapper-content h1
+    {
+        font-size: 26px; /*when device size is 320px or less*/
+    }
+    .wrapper-content
+    {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .about-us p
+    {
+        line-height: 1px;/* so you can adjust the spacing between the line*/
+        font-size: 13px; /*size of font*/
+    }
+}
